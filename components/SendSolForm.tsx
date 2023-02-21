@@ -10,7 +10,7 @@ export const SendSolForm: FC = () => {
 	const { publicKey, sendTransaction } = useWallet()
     const [sig, setSig] = useState("")
 
-    const sendSol = event => {
+    const sendSol = (event: any) => {
         event.preventDefault()
         const amount = event.target.amount.value;
         const recipient = new web3.PublicKey(event.target.recipient.value);
