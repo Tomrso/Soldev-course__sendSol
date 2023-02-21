@@ -1,38 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a task from the Solana Developers course: <a href="https://soldev.app/course/interact-with-wallets">Interact With Wallets</a>
 
-## Getting Started
+## How It Works
+Users connect their wallet to the app utilising the solana wallet adapter. (This is only set up to use Phantom Wallets)
+Once connected you can enter an amount of Sol and a desitnation address.
+Once you press send a transaction is created using systemProgram.transfer. utilising wallet adapter a request is sent to your wallet.
+If the user selects approve then the transaction is submitted. Text appears below the form to confirm the transaction and provides a link to view it on SolScan. 
 
-First, run the development server:
+Set up on Devnet.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Notes: 
+I am still learning how to fully understand the wallet connection but I get closer every time I use it.
+I havent done any additional styling from the starter code as I am focusing purely on learning the Solana aspect.
+If you are learning and you're looking at this, the starter code did not work for me when I cloned it. Create a new next app and add everything in. I think I will create a boilerplate as I am sure the rest of the course may have a similar problem.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+On to the next one :)
